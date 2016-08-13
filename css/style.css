@@ -86,12 +86,12 @@ img{
 	background: #bc2336;
 }
 .container{
-	width: 1280px;
+	width: 100%;
 	margin: 0 auto;
 	padding: 0 10px;
 }
 /*GENERAL SETTINGS END*/
-.header{
+header{
 	height: 117px;
 	border-bottom: 1px solid #ececec;
 	text-align: center;
@@ -115,7 +115,7 @@ img{
 .header-nav li a:hover{
 	color: #bc2336;
 }
-.header .partH-icon-nav{
+header .partH-icon-nav{
 	float: right;
 	margin: 45px 14px 0 0;
 }
@@ -144,7 +144,8 @@ img{
 .partH-icon-nav li a.gmail:hover{
 	background-position: -48px -24px;
 }
-.inner{
+.inner{ 
+	width: 100%;
 	height: 528px;
 	background: url(../img/main-bg.jpg) no-repeat center;
 	background-size: cover;
@@ -531,6 +532,11 @@ input[type="submit"]{
 	height: 50px;
 	background-color: #bc2336;
 	cursor: pointer;
-
 }
 /*CONTACT STYLE END*/
+/* MEDIA START */
+@media (max-width: 1000px){
+	.header-nav li{
+		margin-right: 15px;
+	}
+}
