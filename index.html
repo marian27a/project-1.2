@@ -3,17 +3,18 @@
 	<head>
  		<meta charset="UTF-8">
  		<title>Project 1</title>
+ 		<link rel="stylesheet" href="css/slicknav.css" />
  		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
-		<div class="header">
+		<header>
 			<div class="container">
 				<div class="logo">
 					<a href="index.html">
 						<img src="img/logo.png" alt="">
 					</a>
 				</div>
-				<ul class="header-nav">
+				<ul class="header-nav" id="menu">
 					<li><a href="about.html">О компании</a></li>
 					<li><a href="services.html">Услуги</a></li>
 					<li><a href="gallery.html">Галерея</a></li>
@@ -30,8 +31,8 @@
 					</ul>
 				</div>
 			</div>
-		</div>
-		<div class="main">
+		</header>
+		<main>
 			<div class="inner">
 				<div class="inner-text">
 					<h1>Wow Catering</h1>
@@ -102,7 +103,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</main>
 		<div class="footer">
 			<div class="container">
 				<h3>Wow Catering</h3>
@@ -119,5 +120,12 @@
 			</div>
 			</div>
 		</div>
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<script src="js/jquery.slicknav.js"></script>
+		<script>
+			$(function(){
+				$('#menu').slicknav();
+			});
+		</script>
 	</body>
 </html>
