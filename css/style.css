@@ -199,6 +199,7 @@ header .partH-icon-nav{
 	float: left;
 	margin-right: 22px;
 	position: relative;
+	width: 32%;
 }
 .service-text{
 	width: 206px;
@@ -535,6 +536,14 @@ input[type="submit"]{
 }
 /*CONTACT STYLE END*/
 /* MEDIA START */
+@media (max-width: 1121px){
+	.service-col{
+		margin-right: 12px;
+	}
+	.service-col:last-child{
+		margin-right: 0px;
+	}
+}
 @media (max-width: 1000px){
 	.header-nav li{
 		margin-right: 15px;
