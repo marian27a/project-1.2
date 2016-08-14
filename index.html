@@ -3,6 +3,7 @@
 	<head>
  		<meta charset="UTF-8">
  		<title>Project 1</title>
+ 		<link rel="stylesheet" href="css/slicknav.css" />
  		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
@@ -13,8 +14,8 @@
 						<img src="img/logo.png" alt="">
 					</a>
 				</div>
-				<ul class="header-nav">
-					<li><a href="about.html">О компании test</a></li>
+				<ul class="header-nav" id="menu">
+					<li><a href="about.html">О компании</a></li>
 					<li><a href="services.html">Услуги</a></li>
 					<li><a href="gallery.html">Галерея</a></li>
 					<li><a href="#">Меню</a></li>
@@ -119,5 +120,12 @@
 			</div>
 			</div>
 		</div>
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<script src="js/jquery.slicknav.js"></script>
+		<script>
+			$(function(){
+				$('#menu').slicknav();
+			});
+		</script>
 	</body>
 </html>
